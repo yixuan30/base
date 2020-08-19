@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FzUserController {
     @GetMapping("/test")
     public R test(){
-        return R.ok().data("test","32");
+        return R.ok().data("test","82");
     }
 
 }
