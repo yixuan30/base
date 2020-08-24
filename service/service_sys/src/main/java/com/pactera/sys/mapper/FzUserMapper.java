@@ -1,6 +1,6 @@
 package com.pactera.sys.mapper;
 
-import com.pactera.sys.entity.FzMenu;
+import com.pactera.sys.entity.FzUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author yixuan30
  * @since 2020-08-19
  */
-public interface FzMenuMapper extends BaseMapper<FzMenu> {
+public interface FzUserMapper extends BaseMapper<FzUser> {
 
 }
