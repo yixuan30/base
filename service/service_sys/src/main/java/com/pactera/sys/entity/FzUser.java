@@ -37,7 +37,7 @@ public class FzUser implements Serializable {
     private String userName;
 
     @ApiModelProperty(value = "性别")
-    private String sex;
+    private Integer sex;
 
     @ApiModelProperty(value = "密码")
     private String password;
@@ -46,7 +46,7 @@ public class FzUser implements Serializable {
     private String phone;
 
     @ApiModelProperty(value = "状态")
-    private String state;
+    private Integer state;
 
     @ApiModelProperty(value = "邮箱")
     private String email;
@@ -58,6 +58,22 @@ public class FzUser implements Serializable {
     @ApiModelProperty(value = "更新时间")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
+
+    @ApiModelProperty(value = "盐")
+    private String salt;
+
+    @ApiModelProperty(value = "类型")
+    private Integer type;
+
+    @ApiModelProperty(value = "头像")
+    private String avatar;
+
+    @ApiModelProperty(value = "昵称")
+    private String nickName;
+
+    @ApiModelProperty(value = "生日")
+    private Date birth;
+
 
 
 }

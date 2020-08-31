@@ -11,8 +11,7 @@ import java.util.List;
 
 @Data
 public class MenuNodeVO {
-    @ApiModelProperty(value = "菜单id")
-    @TableId(value = "menu_id", type = IdType.ID_WORKER_STR)
+
     private String menuId;
 
     @ApiModelProperty(value = "菜单名称")
@@ -31,8 +30,6 @@ public class MenuNodeVO {
     @ApiModelProperty(value = "0：不展开，1：展开")
     private Integer open;
 
-    @ApiModelProperty(value = "0：不可用，1：可用")
-    private Integer available;
 
     @ApiModelProperty(value = "类型 0：菜单，1：按钮")
     private Integer type;
@@ -45,7 +42,7 @@ public class MenuNodeVO {
 
     private boolean disabled;
 
-    private List<MenuNodeVO> childern =new ArrayList<>();
+    private List<MenuNodeVO> children =new ArrayList<>();
 
     /*
      * 排序,根据order排序

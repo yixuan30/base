@@ -19,7 +19,7 @@ public class MenuTreeBuilder {
             //为根级菜单添加子菜单
             for(MenuNodeVO  node : rootNode ){
                 List<MenuNodeVO>  childNode =getChild(node.getMenuId(),nodes);
-                node.setChildern(childNode);
+                node.setChildren(childNode);
             }
             return  rootNode;
         }
@@ -34,7 +34,7 @@ public class MenuTreeBuilder {
         }
         //递归添加子菜单
         for(MenuNodeVO node : childNode){
-            node.setChildern(getChild(node.getMenuId(),nodes));
+            node.setChildren(getChild(node.getMenuId(),nodes));
         }
         Collections.sort(childNode,MenuNodeVO.order());
         if(childNode.size() ==0){
