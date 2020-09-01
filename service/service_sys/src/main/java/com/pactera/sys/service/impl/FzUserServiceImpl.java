@@ -156,7 +156,6 @@ public class FzUserServiceImpl extends ServiceImpl<FzUserMapper, FzUser> impleme
         if(sex!=null){
             queryWrapper.like("sex",sex);
         }
-        queryWrapper.eq("type",0);
         List<FzUser> fzUsers = baseMapper.selectList(queryWrapper);
         List<UserVo> userVos = userConverter.converterToUserVOList(fzUsers);
         PageInfo<FzUser> info = new PageInfo<>(fzUsers);

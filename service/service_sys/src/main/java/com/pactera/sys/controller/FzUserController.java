@@ -62,7 +62,7 @@ public class FzUserController {
      * 添加用户
      * */
     @ApiOperation("添加用户")
-    @PostMapping("add")
+    @PostMapping("/add")
     @RequiresPermissions({"user:add"})
     public R addUser(@RequestBody UserVo user){
         userService.addUser(user);

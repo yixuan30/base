@@ -5,7 +5,6 @@ import com.pactera.commonUtils.R;
 import com.pactera.sys.entity.FzRole;
 import com.pactera.sys.entity.menu.MenuNodeVO;
 import com.pactera.sys.entity.page.PageVo;
-import com.pactera.sys.entity.role.RoleQuery;
 import com.pactera.sys.entity.role.RoleVo;
 import com.pactera.sys.service.FzMenuService;
 import com.pactera.sys.service.FzRoleService;
@@ -95,8 +94,8 @@ public class FzRoleController {
     * */
     @ApiOperation(value = "角色列表")
     @GetMapping("/findRoleList")
-    public R findRoleList(@RequestParam(value = "pagNum",defaultValue = "1") Integer pageNum,
-                          @RequestParam(value = "pagesize",defaultValue = "7")Integer pageSize,
+    public R findRoleList(@RequestParam(value = "pageNum",defaultValue = "1") Integer pageNum,
+                          @RequestParam(value = "pageSize",defaultValue = "7")Integer pageSize,
                           RoleVo roleVo){
         PageVo<RoleVo> roleList = fzRoleService.findRoleList(pageNum,pageSize,roleVo);
         return  R.ok().data("roleList",roleList);
