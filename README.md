@@ -1,7 +1,7 @@
 # base
 ### 这是一个后台管理系统一个脚手架
   * 前端使用**vue + element ui**框架,前端源代码地址：https://github.com/yixuan30/vue_base
-  * 后台使用**spring boot2 + shiro + mybatispuls + mysql**数据库，后台源代码地址：https://github.com/yixuan30/base/new/master
+  * 后台使用**spring boot2 + shiro + mybatispuls + mysql**数据库，后台源代码地址：https://github.com/yixuan30/base
   * 前后台通信使用axios.
 ### 实现功能：
 	1.用户管理：实现用户的增删改，模糊查询，为用户分配相应的角色。
