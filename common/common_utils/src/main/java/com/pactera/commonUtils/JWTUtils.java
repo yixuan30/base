@@ -1,10 +1,5 @@
 package com.pactera.commonUtils;
 
-/**
- * @Author zhangyukang
- * @Date 2020/3/1 09:18
- * @Version 1.0
- **/
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
